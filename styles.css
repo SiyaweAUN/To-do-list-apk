@@ -1,0 +1,82 @@
+:root {
+    /* Light Theme */
+    --primary-color: #4A90E2; /* Blue for buttons, headers, or primary actions */
+    --secondary-color: #50C878; /* Green for success states or completed tasks */
+    --accent-color: #F28C38; /* Orange for highlights or urgent tasks */
+    --background-color: #F5F7FA; /* Light gray for main background */
+    --card-background: #FFFFFF; /* White for task cards or modals */
+    --text-primary: #2D3748; /* Dark gray for primary text */
+    --text-secondary: #6B7280; /* Medium gray for secondary text */
+    --border-color: #E2E8F0; /* Light border for dividers or inputs */
+    --error-color: #E53E3E; /* Red for errors or delete actions */
+  
+    /* Dark Theme (optional, toggle with prefers-color-scheme or class) */
+    --dark-primary-color: #63B3ED; /* Lighter blue for dark mode */
+    --dark-secondary-color: #68D391; /* Lighter green for dark mode */
+    --dark-accent-color: #F6AD55; /* Lighter orange for dark mode */
+    --dark-background-color: #1A202C; /* Dark gray for background */
+    --dark-card-background: #2D3748; /* Slightly lighter dark for cards */
+    --dark-text-primary: #E2E8F0; /* Light gray for primary text */
+    --dark-text-secondary: #A0AEC0; /* Medium gray for secondary text */
+    --dark-border-color: #4A5568; /* Darker border for dark mode */
+  }
+
+  *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Calibri','poppins','sans-serif'
+  }
+
+  .container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+    height:100vh;
+    padding:10px auto;
+    background-color: var(--dark-background-color);
+    color:var(--border-color);
+    border:2px solid var(--dark-secondary-color)
+  }
+  .input{
+    display:flex;
+    flex-direction:row;
+    padding:20px;
+    align-items: center;
+    justify-content:center;
+    border:1px solid var(--dark-accent-color);
+    color: var(--text-primary);
+    gap:20px;
+  }
+  button{
+    color:var(--dark-background-color);
+    background-color:var(--primary-color)
+  }
+  button:hover{
+    transform:scale(1.2);
+    box-shadow: 4px 4px 8px var(--error-color);
+    cursor:pointer;
+  }
+
+  header{
+    text-align: center;
+    font-size: 50px;
+    color: var(--background-color);
+    padding: 10px;
+  }
+
+  #tasksContainer{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    align-items: center;
+    justify-content:center;
+    color:(var(--text-primary));
+    gap:20px;
+  }
+  .buttonAdd{
+    padding:10px;
+
+  }
